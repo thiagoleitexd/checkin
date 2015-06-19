@@ -54,8 +54,6 @@ public class MainActivity extends ActionBarActivity {
             public void onResponse(JSONObject response) {
                 Log.i("Teste2", "Sucesso: " + response);
 
-
-
                 try {
 
                     Intent intent = new Intent(MainActivity.this, ModuloAluno.class);
@@ -78,9 +76,6 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
 
                 }
-
-
-
             }
         }, new Response.ErrorListener() {
             //Função executada quando Houver Erro
@@ -90,7 +85,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        cjor.setTag("tag");
         rq.add(cjor);
     }
 
@@ -109,16 +103,8 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        cjor.setTag("tag");
         rq.add(cjor);
     }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-        rq.cancelAll("tag");
-    }
-
 
 
     @Override

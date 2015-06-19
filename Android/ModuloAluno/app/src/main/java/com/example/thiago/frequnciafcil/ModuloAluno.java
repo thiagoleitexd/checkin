@@ -23,18 +23,6 @@ public class ModuloAluno extends ActionBarActivity {
 
         TextView apresentacao = (TextView) findViewById(R.id.apresentacao);
 
-
-        array_spinner=new String[5];
-        array_spinner[0]="Selecione uma Disciplina";
-        array_spinner[1]="Redes de computadores";
-        array_spinner[2]="Fundamentos de Sistema de Informação";
-        array_spinner[3]="Programação Web";
-        array_spinner[4]="Empreendedorismo em Informática";
-        Spinner s = (Spinner) findViewById(R.id.disciplinas);
-        ArrayAdapter adapter = new ArrayAdapter(this,
-                android.R.layout.simple_spinner_item, array_spinner);
-        s.setAdapter(adapter);
-
         Intent intent = getIntent();
         String apikey = intent.getStringExtra("apiKey");
         String nome = intent.getStringExtra("name");

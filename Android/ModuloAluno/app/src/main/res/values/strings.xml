@@ -7,4 +7,6 @@
     <string name="login" />
     <string name="entrar" />
     <string name="title_activity_modulo_aluno">ModuloAluno</string>
+    <string name="senhaAula">Digite a Senha da Aula</string>
+    <string name="presente">Presente</string>
 </resources>

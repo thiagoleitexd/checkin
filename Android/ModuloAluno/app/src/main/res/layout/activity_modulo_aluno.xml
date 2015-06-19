@@ -15,21 +15,12 @@
         android:textStyle="bold"
         android:text="TextView" />
 
-
-    <Spinner
-        android:id="@+id/disciplinas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
-        android:layout_below="@+id/apresentacao"
-        android:layout_centerHorizontal="true" />
-
     <EditText
         android:id="@+id/senhaaula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Digite a senha da aula"
+        android:hint="@string/senhaAula"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
@@ -45,6 +36,6 @@
         android:layout_below="@+id/senhaaula"
         android:layout_marginTop="64dp"
         android:onClick="presente"
-        android:text="Presente" />
+        android:text="@string/presente" />
 
 </RelativeLayout>
